@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="EcoBazar - Your one-stop shop for all things eco-friendly.">
+   <title>About Us — EcoBazar</title>
+   <link rel="shortcut icon" href="./assets/img/fav.png" type="image/x-icon">
+   <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet" />
+   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+   <style>
+
+
+
+  
+
+      /* Utility */
+      .fu {
+         opacity: 0;
+         transform: translateY(30px);
+         animation: fadeUp 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.1) forwards;
+      }
+
+      @keyframes fadeUp {
+         to {
+            opacity: 1;
+            transform: translateY(0);
+         }
+      }
+
+      .d2 {
+         animation-delay: 0.1s;
+      }
+
+      .d1 {
+         animation-delay: 0.05s;
+      }
+
+      .d3 {
+         animation-delay: 0.15s;
+      }
+
+      .hl {
+         color: var(--branding-success);
+      }
+
+      .stag {
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
+         font-size: 14px;
+         font-weight: 600;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         color: var(--branding-success);
+         background: rgba(0, 178, 7, 0.1);
+         padding: 6px 14px;
+         border-radius: 40px;
+         margin-bottom: 20px;
+      }
+
+      .stag svg {
+         width: 18px;
+         height: 18px;
+         fill: none;
+         stroke: var(--branding-success);
+         stroke-width: 1.8;
+      }
+
+      .btn-main {
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
+         background: var(--branding-success);
+         color: white;
+         font-weight: 600;
+         padding: 12px 28px;
+         border-radius: 40px;
+         text-decoration: none;
+         transition: 0.25s ease;
+         border: none;
+      }
+
+      .btn-main svg {
+         width: 20px;
+         height: 20px;
+         fill: white;
+      }
+
+      .btn-main:hover {
+         background: var(--branding-success-dark);
+         transform: translateY(-2px);
+      }
+
+      /* Hero */
+      .about-hero {
+         max-width: 1280px;
+         margin: 40px auto 60px;
+         padding: 0 24px;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 48px;
+         align-items: center;
+      }
+
+      .about-hero h1 {
+         font-size: 3rem;
+         font-weight: 700;
+         line-height: 1.2;
+         margin-bottom: 20px;
+         color: #000;
+      }
+
+      .feature-chips {
+         display: flex;
+         gap: 16px;
+         margin: 24px 0 32px;
+         flex-wrap: wrap;
+      }
+
+      .fchip {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         background: var(--gray-5);
+         padding: 6px 16px;
+         border-radius: 40px;
+         font-size: 14px;
+         font-weight: 500;
+      }
+
+      .fchip svg {
+         width: 18px;
+         height: 18px;
+         fill: var(--branding-success);
+      }
+
+      .img-col {
+         position: relative;
+      }
+
+      /* Hero: white section, image right — rounded like Figma */
+      .about-hero .img-col img {
+         width: 100%;
+         border-radius: 20px;
+         object-fit: cover;
+         box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+         display: block;
+      }
+
+      /* Gray band: image left — Figma asset 1129 × 685 (aspect preserved) */
+      .about-second .img-col {
+         align-self: start;
+         display: flex;
+         min-width: 0;
+      }
+
+      .about-second .img-col img {
+         width: 100%;
+         max-width: 1129px;
+         height: auto;
+         aspect-ratio: 1129 / 685;
+         object-fit: cover;
+         border-radius: 16px;
+         box-shadow: none;
+      }
+
+      .stat-pill {
+         position: absolute;
+         bottom: 20px;
+         left: 20px;
+         background: white;
+         padding: 12px 20px;
+         border-radius: 60px;
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      .icon-w svg {
+         width: 32px;
+         height: 32px;
+         fill: var(--branding-success);
+      }
+
+      .snum {
+         font-size: 20px;
+         font-weight: 800;
+      }
+
+      .slbl {
+         font-size: 12px;
+         color: var(--gray-2);
+      }
+
+      /* Feature section (gray band) */
+      .feature-band {
+         background: var(--gray-5);
+         padding: 72px 24px;
+         margin: 0;
+      }
+
+      .about-second {
+         max-width: 1280px;
+         margin: 0 auto;
+         padding: 0;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 56px;
+         align-items: stretch;
+      }
+
+      .section-title {
+         font-size: 2.25rem;
+         font-weight: 700;
+         line-height: 1.2;
+         color: #000;
+         margin-bottom: 16px;
+      }
+
+      .about-second>.fu>p,
+      .about-hero .text-col p {
+         color: var(--gray-2);
+         line-height: 1.7;
+         font-size: 15px;
+      }
+
+      .feature-grid {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 32px 40px;
+         margin-top: 32px;
+      }
+
+      .fg-item {
+         display: flex;
+         gap: 14px;
+         align-items: center;
+      }
+
+      .fg-icon {
+         flex-shrink: 0;
+         width: 48px;
+         height: 48px;
+         border-radius: 50%;
+         background: rgba(0, 178, 7, 0.12);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .fg-icon iconify-icon {
+         font-size: 22px;
+         width: 22px;
+         height: 22px;
+         color: var(--branding-success);
+      }
+
+      .fg-title {
+         font-weight: 700;
+         font-size: 15px;
+         margin-bottom: 6px;
+         color: #000;
+      }
+
+      .fg-desc {
+         font-size: 13px;
+         color: var(--gray-3);
+         line-height: 1.5;
+      }
+
+      .years-badge {
+         position: absolute;
+         bottom: 30px;
+         right: -10px;
+         background: white;
+         border-radius: 28px;
+         padding: 16px 20px;
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .yn {
+         font-size: 44px;
+         font-weight: 800;
+         color: var(--branding-success);
+         line-height: 1;
+      }
+
+      .check-items {
+         margin: 32px 0;
+         display: flex;
+         flex-direction: column;
+         gap: 24px;
+      }
+
+      .check-item {
+         display: flex;
+         gap: 16px;
+      }
+
+      .chk svg {
+         width: 24px;
+         height: 24px;
+         fill: var(--branding-success);
+      }
+
+      .ci-title {
+         font-weight: 700;
+         margin-bottom: 4px;
+      }
+
+      .ci-desc {
+         font-size: 14px;
+         color: var(--gray-3);
+      }
+
+      /* Delivery */
+      .delivery {
+         max-width: 1280px;
+         margin: 60px auto;
+         padding: 0 24px;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 56px;
+         align-items: center;
+      }
+
+      .delivery .img-col img {
+         width: 100%;
+         border-radius: 20px;
+         object-fit: cover;
+         box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+         display: block;
+      }
+
+      .steps {
+         margin: 32px 0;
+         display: flex;
+         flex-direction: column;
+         gap: 28px;
+      }
+
+      .step {
+         display: flex;
+         gap: 18px;
+      }
+
+      .step-num {
+         font-size: 28px;
+         font-weight: 800;
+         color: var(--branding-success);
+         background: rgba(0, 178, 7, 0.1);
+         width: 52px;
+         height: 52px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 60px;
+      }
+
+      .s-title {
+         font-weight: 700;
+         margin-bottom: 6px;
+      }
+
+      .s-desc {
+         font-size: 14px;
+         color: var(--gray-2);
+      }
+
+      /* Stats row */
+      .stats-row {
+         max-width: 1280px;
+         margin: 40px auto 70px;
+         padding: 0 24px;
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         gap: 28px;
+         text-align: center;
+      }
+
+      .sbox {
+         background: var(--gray-5);
+         padding: 32px 16px;
+         border-radius: 28px;
+         transition: 0.2s;
+      }
+
+      .sbox-icon svg {
+         width: 44px;
+         height: 44px;
+         fill: var(--branding-success);
+         margin-bottom: 16px;
+      }
+
+      .sbox .snum {
+         font-size: 32px;
+         font-weight: 800;
+      }
+
+      /* Team */
+      .team-band {
+         background: var(--gray-5);
+         padding: 72px 24px;
+         margin: 0;
+      }
+
+      .team-section {
+         max-width: 1280px;
+         margin: 0 auto;
+         padding: 0;
+      }
+
+      .sec-head {
+         text-align: center;
+         margin-bottom: 40px;
+         max-width: 640px;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      .sec-head h2 {
+         font-size: 2.25rem;
+         font-weight: 700;
+         color: #000;
+         margin-bottom: 12px;
+      }
+
+      .sec-sub {
+         color: var(--gray-3);
+         font-size: 15px;
+         line-height: 1.65;
+      }
+
+      .team-carousel {
+         display: flex;
+         align-items: center;
+         gap: 16px;
+      }
+
+      .team-nav {
+         flex-shrink: 0;
+         width: 44px;
+         height: 44px;
+         border-radius: 50%;
+         border: 1px solid var(--gray-4);
+         background: #fff;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         cursor: pointer;
+         transition: 0.2s;
+      }
+
+      .team-nav:hover {
+         border-color: var(--branding-success);
+         color: var(--branding-success);
+      }
+
+      .team-nav svg {
+         width: 22px;
+         height: 22px;
+         fill: var(--gray-2);
+      }
+
+      .team-nav:hover svg {
+         fill: var(--branding-success);
+      }
+
+      .team-grid-wrap {
+         flex: 1;
+         min-width: 0;
+         overflow: hidden;
+      }
+
+      .team-slick .slick-list {
+         margin: 0 -14px;
+      }
+
+      .team-slick .slick-slide {
+         padding: 0 14px;
+         height: auto;
+      }
+
+      .team-slick .slick-slide > div {
+         height: 100%;
+      }
+
+      .team-slick-dots,
+      .testi-slick-dots {
+         margin-top: 20px;
+      }
+
+      .team-slick-dots .slick-dots,
+      .testi-slick-dots .slick-dots {
+         position: static;
+         bottom: auto;
+         display: flex !important;
+         justify-content: center;
+         gap: 8px;
+         flex-wrap: wrap;
+         padding: 0;
+         margin: 0;
+         list-style: none;
+      }
+
+      .team-slick-dots .slick-dots li,
+      .testi-slick-dots .slick-dots li {
+         width: auto;
+         height: auto;
+         margin: 0;
+      }
+
+      .team-slick-dots .slick-dots li button,
+      .testi-slick-dots .slick-dots li button {
+         width: 10px;
+         height: 10px;
+         padding: 0;
+         line-height: 0;
+         font-size: 0;
+         border: none;
+         border-radius: 50%;
+         background: var(--gray-4);
+      }
+
+      .team-slick-dots .slick-dots li button:before,
+      .testi-slick-dots .slick-dots li button:before {
+         display: none;
+      }
+
+      .team-slick-dots .slick-dots li.slick-active button,
+      .testi-slick-dots .slick-dots li.slick-active button {
+         background: var(--branding-success);
+      }
+
+      .team-card {
+         background: #fff;
+         border-radius: 10px;
+         overflow: hidden;
+         border: 1px solid rgba(0, 0, 0, 0.06);
+         box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+         transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+      }
+
+      .team-card:hover {
+         box-shadow: 0 18px 42px rgba(0, 0, 0, 0.12);
+         transform: translateY(-4px);
+         border-color: var(--gray-4);
+      }
+
+      .tc-photo {
+         position: relative;
+         overflow: hidden;
+         background: var(--gray-5);
+      }
+
+      .tc-photo img {
+         width: 100%;
+         aspect-ratio: 1/1;
+         object-fit: cover;
+         display: block;
+         border-radius: 10px 10px 0 0;
+      }
+
+      /* Full-image dim overlay + centered socials (Shopery team hover) */
+      .tc-overlay {
+         position: absolute;
+         inset: 0;
+         z-index: 2;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 6px;
+         background: rgba(26, 26, 26, 0.52);
+         opacity: 0;
+         transition: opacity 0.28s ease;
+         pointer-events: none;
+      }
+
+      .team-card:hover .tc-overlay,
+      .team-card:focus-within .tc-overlay {
+         opacity: 1;
+         pointer-events: auto;
+      }
+
+      .tc-soc {
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         width: 42px;
+         height: 42px;
+         border-radius: 50%;
+         color: #fff;
+         text-decoration: none;
+         transition: background 0.2s ease, transform 0.2s ease;
+      }
+
+      .tc-soc iconify-icon {
+         font-size: 22px;
+      }
+
+      .tc-soc:hover,
+      .tc-soc:focus-visible {
+         background: var(--branding-success);
+         outline: none;
+         transform: scale(1.05);
+      }
+
+      /* Mockup default: Twitter (2nd) has green dot on card hover */
+      .team-card:hover .tc-overlay .tc-soc:nth-child(2) {
+         background: var(--branding-success);
+      }
+
+      /* When any icon is hovered, only that one is highlighted */
+      .team-card:hover .tc-overlay:has(.tc-soc:hover) .tc-soc:nth-child(2):not(:hover) {
+         background: transparent;
+      }
+
+      .tc-info {
+         padding: 20px;
+         text-align: center;
+         border-radius: 0 0 10px 10px;
+         background: #fff;
+      }
+
+      .tc-name {
+         font-weight: 700;
+         font-size: 18px;
+         color: #000;
+      }
+
+      .tc-role {
+         font-size: 13px;
+         color: var(--gray-3);
+         font-weight: 500;
+      }
+
+      /* Testimonials */
+      .testi-band {
+         background: var(--gray-5);
+         padding: 72px 24px;
+         margin: 0;
+      }
+
+      .testimonials {
+         max-width: 1280px;
+         margin: 0 auto;
+         padding: 0;
+      }
+
+      .testi-hdr {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 36px;
+         flex-wrap: wrap;
+         gap: 16px;
+      }
+
+      .testi-hdr h2 {
+         font-size: 2.25rem;
+         font-weight: 700;
+         color: #000;
+      }
+
+      .testi-arrows {
+         display: flex;
+         gap: 12px;
+      }
+
+      .arr-btn {
+         background: var(--gray-5);
+         border: none;
+         width: 44px;
+         height: 44px;
+         border-radius: 60px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         cursor: pointer;
+      }
+
+      .arr-btn svg {
+         width: 24px;
+         height: 24px;
+         fill: var(--gray-2);
+      }
+
+      .arr-btn--prev {
+         background: #fff;
+         border: 1px solid var(--gray-4);
+      }
+
+      .arr-btn--next {
+         background: var(--branding-success);
+         border: none;
+      }
+
+      .arr-btn--next svg {
+         fill: #fff;
+      }
+
+      .testi-slider-wrap {
+         overflow: hidden;
+         width: 100%;
+      }
+
+      .testi-slick {
+         width: 100%;
+      }
+
+      .testi-slick .slick-list {
+         margin: 0 -12px;
+      }
+
+      .testi-slick .slick-slide {
+         padding: 0 12px;
+         height: auto;
+         box-sizing: border-box;
+      }
+
+      .testi-slick .slick-slide > div,
+      .testi-slick .slick-slide .tcard {
+         width: 100%;
+         max-width: 100%;
+         min-width: 0;
+         height: 100%;
+         box-sizing: border-box;
+      }
+
+      .tcard {
+         background: white;
+         border: none;
+         border-radius: 24px;
+         padding: 28px;
+         transition: 0.2s;
+         box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.08);
+         display: flex;
+         flex-direction: column;
+         margin: 0;
+      }
+
+      .t-quote {
+         margin-bottom: 16px;
+      }
+
+      .t-quote svg {
+         width: 36px;
+         height: 36px;
+         fill: var(--branding-success);
+         opacity: 1;
+      }
+
+      .tcard>p {
+         flex: 1;
+         color: var(--gray-2);
+         line-height: 1.65;
+         font-size: 15px;
+         margin-bottom: 24px;
+      }
+
+      .tcard-footer {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+      }
+
+      .tcard-footer img {
+         width: 48px;
+         height: 48px;
+         border-radius: 50%;
+         object-fit: cover;
+      }
+
+      .tcard-footer-text {
+         flex: 1;
+         min-width: 0;
+      }
+
+      .t-uname {
+         font-weight: 700;
+         font-size: 15px;
+         color: #000;
+      }
+
+      .t-urole {
+         font-size: 13px;
+         color: var(--gray-3);
+      }
+
+      .t-stars {
+         display: flex;
+         gap: 3px;
+         flex-shrink: 0;
+      }
+
+      .t-stars svg {
+         width: 16px;
+         height: 16px;
+         fill: #FFB800;
+      }
+
+      /* Newsletter */
+      .newsletter {
+         max-width: 1280px;
+         margin: 60px auto;
+         background: linear-gradient(135deg, #E9F9EB, #D0F0D3);
+         border-radius: 48px;
+         padding: 52px 48px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap;
+         gap: 24px;
+      }
+
+      .nl-text h2 {
+         font-size: 28px;
+         font-weight: 700;
+         margin-bottom: 8px;
+      }
+
+      .nl-form {
+         display: flex;
+         gap: 12px;
+         flex-wrap: wrap;
+      }
+
+      .nl-form input {
+         padding: 14px 22px;
+         border-radius: 60px;
+         border: none;
+         width: 280px;
+         font-family: inherit;
+         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .nl-form button {
+         background: var(--branding-success);
+         border: none;
+         padding: 14px 28px;
+         border-radius: 60px;
+         font-weight: 600;
+         color: white;
+         cursor: pointer;
+      }
+
+      /* Footer */
+      footer {
+         background: #111;
+         color: #ddd;
+         padding: 56px 24px 32px;
+      }
+
+      .footer-grid {
+         max-width: 1280px;
+         margin: 0 auto;
+         display: grid;
+         grid-template-columns: 2fr 1fr 1fr 1fr;
+         gap: 40px;
+      }
+
+      .logo {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         margin-bottom: 16px;
+      }
+
+      .logo-leaf svg {
+         width: 32px;
+         height: 32px;
+         fill: var(--branding-success);
+      }
+
+      .logo-name {
+         font-size: 24px;
+         font-weight: 700;
+         color: white;
+      }
+
+      .logo-name span {
+         color: var(--branding-success);
+      }
+
+      .fb-desc {
+         margin: 16px 0;
+         font-size: 14px;
+         line-height: 1.5;
+         color: #aaa;
+      }
+
+      .fb-contact {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         margin: 12px 0;
+         font-size: 14px;
+      }
+
+      .fb-contact svg {
+         width: 20px;
+         height: 20px;
+         fill: var(--branding-success);
+      }
+
+      .fc h4 {
+         color: white;
+         margin-bottom: 20px;
+         font-weight: 600;
+      }
+
+      .fc ul {
+         list-style: none;
+      }
+
+      .fc li {
+         margin-bottom: 12px;
+      }
+
+      .fc a {
+         color: #aaa;
+         text-decoration: none;
+         transition: 0.2s;
+      }
+
+      .footer-btm {
+         max-width: 1280px;
+         margin: 40px auto 0;
+         display: flex;
+         justify-content: space-between;
+         padding-top: 28px;
+         border-top: 1px solid #2a2a2a;
+         flex-wrap: wrap;
+         gap: 16px;
+      }
+
+      .pay-methods {
+         display: flex;
+         gap: 12px;
+      }
+
+      .pchip {
+         background: #2a2a2a;
+         padding: 6px 14px;
+         border-radius: 40px;
+         font-size: 12px;
+         font-weight: 500;
+      }
+
+      @media (max-width: 1000px) {
+
+         .about-hero,
+         .about-second,
+         .delivery {
+            grid-template-columns: 1fr;
+            gap: 40px;
+         }
+
+         .about-second .img-col img {
+            max-width: none;
+         }
+
+
+         .feature-grid {
+            grid-template-columns: 1fr;
+         }
+
+         .footer-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+         }
+
+         .newsletter {
+            flex-direction: column;
+            text-align: center;
+         }
+      }
+
+      @media (max-width: 680px) {
+
+         .footer-grid {
+            grid-template-columns: 1fr;
+         }
+      }
+   </style>
+
+</head>
+
+<body>
+  
+   <main>
+      <!-- HERO ABOUT -->
+      <section class="about-hero">
+         <div class="text-col fu">
+            <h1>100% Trusted Organic Food Store</h1>
+            <p>Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae eros.
+               Cras quis
+               ultricies elit. Proin ac lectus arcu. Maecenas aliquet vel tellus at accumsan. Donec a eros non massa
+               vulputate ornare.
+               Vivamus ornare commodo ante, at commodo felis congue vitae.</p>
+         </div>
+         <div class="img-col fu d2">
+            <img src="./assets/img/Aboutbannerimage/Aboutbannerimage.png"
+               alt="Farmer holding a basket of fresh organic vegetables">
+         </div>
+      </section>
+
+      <!-- FEATURE SECTION (Figma gray band + 2×3 icons) -->
+      <div class="feature-band">
+         <section class="about-second">
+            <div class="img-col fu"><img src="./assets/img/Aboutbannerimage/Aboutbannerimage-2.png" width="1129"
+                  height="685" alt="Organic farm">
+            </div>
+            <div class="fu d2">
+               <h2 class="section-title">100% Trusted Organic Food Store</h2>
+               <p>Morbi porttitor ligula in nunc varius sagittis. Proin dui nisi, laoreet ut tempor ac, cursus vitae
+                  eros.</p>
+               <div class="feature-grid">
+                  <div class="fg-item">
+                     <div class="fg-icon"><iconify-icon icon="mdi:leaf" aria-hidden="true"></iconify-icon></div>
+                     <div>
+                        <div class="fg-title">100% Organic food</div>
+                        <div class="fg-desc">100% healthy &amp; Fresh food.</div>
+                     </div>
+                  </div>
+                  <div class="fg-item">
+                     <div class="fg-icon"><iconify-icon icon="mdi:headset" aria-hidden="true"></iconify-icon></div>
+                     <div>
+                        <div class="fg-title">Great Support 24/7</div>
+                        <div class="fg-desc">Instant access to Contact.</div>
+                     </div>
+                  </div>
+                  <div class="fg-item">
+                     <div class="fg-icon"><iconify-icon icon="mdi:star" aria-hidden="true"></iconify-icon></div>
+                     <div>
+                        <div class="fg-title">Customer Feedback</div>
+                        <div class="fg-desc">Our happy customer.</div>
+                     </div>
+                  </div>
+                  <div class="fg-item">
+                     <div class="fg-icon"><iconify-icon icon="mdi:shield-check" aria-hidden="true"></iconify-icon></div>
+                     <div>
+                        <div class="fg-title">100% Secure Payment</div>
+                        <div class="fg-desc">We ensure your money is safe.</div>
+                     </div>
+                  </div>
+                  <div class="fg-item">
+                     <div class="fg-icon"><iconify-icon icon="mdi:truck-delivery" aria-hidden="true"></iconify-icon>
+                     </div>
+                     <div>
+                        <div class="fg-title">Free Shipping</div>
+                        <div class="fg-desc">Free shipping with discount.</div>
+                     </div>
+                  </div>
+                  <div class="fg-item">
+                     <div class="fg-icon"><iconify-icon icon="mdi:package-variant" aria-hidden="true"></iconify-icon>
+                     </div>
+                     <div>
+                        <div class="fg-title">100% Organic Food</div>
+                        <div class="fg-desc">100% healthy &amp; Fresh food.</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <!-- DELIVERY -->
+      <section class="delivery">
+         <div class="text-col fu">
+            <h2 class="section-title">We Delivered, You Enjoy Your Order.</h2>
+            <p>From the moment you place your order to delivery at your door, we handle everything with care. Cold-chain
+               logistics keep your produce perfectly fresh every step of the way.</p>
+            <div class="check-items">
+               <div class="check-item">
+                  <div class="chk"><svg viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                     </svg></div>
+                  <div>
+                     <div class="ci-title">Browse &amp; order fresh organic groceries online</div>
+                     <div class="ci-desc">Pick from seasonal produce, pantry staples, and more.</div>
+                  </div>
+               </div>
+               <div class="check-item">
+                  <div class="chk"><svg viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                     </svg></div>
+                  <div>
+                     <div class="ci-title">We pack your order with care</div>
+                     <div class="ci-desc">Temperature-controlled handling from warehouse to driver.</div>
+                  </div>
+               </div>
+               <div class="check-item">
+                  <div class="chk"><svg viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                     </svg></div>
+                  <div>
+                     <div class="ci-title">Enjoy same-day or scheduled delivery</div>
+                     <div class="ci-desc">Track your order and get updates until it reaches you.</div>
+                  </div>
+               </div>
+            </div>
+            <a href="shop.html" class="btn-main">Shop Now <svg viewBox="0 0 24 24">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+               </svg></a>
+         </div>
+         <div class="img-col fu d2"><img src="./assets/img/Aboutbannerimage/Aboutbannerimage-3.png" alt="Delivery">
+         </div>
+      </section>
+
+      <!-- TEAM -->
+      <div class="team-band">
+         <section class="team-section">
+            <div class="sec-head">
+               <h2>Our Awesome Team</h2>
+               <p class="sec-sub">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet
+                  elit eu magna.</p>
+            </div>
+            <div class="team-carousel">
+               <button type="button" class="team-nav" id="teamPrev" aria-label="Previous team members">
+                  <svg viewBox="0 0 24 24">
+                     <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                  </svg>
+               </button>
+               <div class="team-grid-wrap">
+                  <div class="team-slick responsive">
+                     <div class="team-card fu">
+                        <div class="tc-photo"><img
+                              src="./assets/img/Aboutbannerimage/Aboutbannerimage-4.png" alt="">
+                           <div class="tc-overlay">
+                              <a href="#" class="tc-soc" aria-label="Facebook"><iconify-icon
+                                    icon="mdi:facebook"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Twitter"><iconify-icon
+                                    icon="mdi:twitter"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Pinterest"><iconify-icon
+                                    icon="mdi:pinterest"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Instagram"><iconify-icon
+                                    icon="mdi:instagram"></iconify-icon></a>
+                           </div>
+                        </div>
+                        <div class="tc-info">
+                           <div class="tc-name">Jenny Wilson</div>
+                           <div class="tc-role">CEO &amp; Founder</div>
+                        </div>
+                     </div>
+                     <div class="team-card fu d1">
+                        <div class="tc-photo"><img
+                              src="./assets/img/Aboutbannerimage/Aboutbannerimage-5.png"
+                              alt="">
+                           <div class="tc-overlay">
+                              <a href="#" class="tc-soc" aria-label="Facebook"><iconify-icon
+                                    icon="mdi:facebook"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Twitter"><iconify-icon
+                                    icon="mdi:twitter"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Pinterest"><iconify-icon
+                                    icon="mdi:pinterest"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Instagram"><iconify-icon
+                                    icon="mdi:instagram"></iconify-icon></a>
+                           </div>
+                        </div>
+                        <div class="tc-info">
+                           <div class="tc-name">Sarah Chen</div>
+                           <div class="tc-role">Head of Operations</div>
+                        </div>
+                     </div>
+                     <div class="team-card fu d2">
+                        <div class="tc-photo"><img
+                              src="./assets/img/Aboutbannerimage/Aboutbannerimage-6.png"
+                              alt="Luke Fisher">
+                           <div class="tc-overlay">
+                              <a href="#" class="tc-soc" aria-label="Facebook"><iconify-icon
+                                    icon="mdi:facebook"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Twitter"><iconify-icon
+                                    icon="mdi:twitter"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Pinterest"><iconify-icon
+                                    icon="mdi:pinterest"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Instagram"><iconify-icon
+                                    icon="mdi:instagram"></iconify-icon></a>
+                           </div>
+                        </div>
+                        <div class="tc-info">
+                           <div class="tc-name">Luke Fisher</div>
+                           <div class="tc-role">Farm Relations</div>
+                        </div>
+                     </div>
+                     <div class="team-card fu d3">
+                        <div class="tc-photo"><img
+                              src="./assets/img/Aboutbannerimage/Aboutbannerimage-7.webp"
+                              alt="">
+                           <div class="tc-overlay">
+                              <a href="#" class="tc-soc" aria-label="Facebook"><iconify-icon
+                                    icon="mdi:facebook"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Twitter"><iconify-icon
+                                    icon="mdi:twitter"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Pinterest"><iconify-icon
+                                    icon="mdi:pinterest"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Instagram"><iconify-icon
+                                    icon="mdi:instagram"></iconify-icon></a>
+                           </div>
+                        </div>
+                        <div class="tc-info">
+                           <div class="tc-name">Robert Tan</div>
+                           <div class="tc-role">Lead Developer</div>
+                        </div>
+                     </div>
+                     <div class="team-card fu">
+                        <div class="tc-photo"><img
+                              src="./assets/img/Aboutbannerimage/Aboutbannerimage-8.jpg"
+                              alt="">
+                           <div class="tc-overlay">
+                              <a href="#" class="tc-soc" aria-label="Facebook"><iconify-icon
+                                    icon="mdi:facebook"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Twitter"><iconify-icon
+                                    icon="mdi:twitter"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Pinterest"><iconify-icon
+                                    icon="mdi:pinterest"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Instagram"><iconify-icon
+                                    icon="mdi:instagram"></iconify-icon></a>
+                           </div>
+                        </div>
+                        <div class="tc-info">
+                           <div class="tc-name">Alex Morgan</div>
+                           <div class="tc-role">Marketing Lead</div>
+                        </div>
+                     </div>
+                     <div class="team-card fu">
+                        <div class="tc-photo"><img
+                              src="./assets/img/Aboutbannerimage/Aboutbannerimage-9.webp"
+                              alt="">
+                           <div class="tc-overlay">
+                              <a href="#" class="tc-soc" aria-label="Facebook"><iconify-icon
+                                    icon="mdi:facebook"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Twitter"><iconify-icon
+                                    icon="mdi:twitter"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Pinterest"><iconify-icon
+                                    icon="mdi:pinterest"></iconify-icon></a>
+                              <a href="#" class="tc-soc" aria-label="Instagram"><iconify-icon
+                                    icon="mdi:instagram"></iconify-icon></a>
+                           </div>
+                        </div>
+                        <div class="tc-info">
+                           <div class="tc-name">Priya Patel</div>
+                           <div class="tc-role">Customer Care</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="teamSlickDots" class="team-slick-dots"></div>
+               </div>
+               <button type="button" class="team-nav" id="teamNext" aria-label="Next team members">
+                  <svg viewBox="0 0 24 24">
+                     <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                  </svg>
+               </button>
+            </div>
+         </section>
+      </div>
+
+      <div class="testi-band">
+         <section class="testimonials">
+            <div class="testi-hdr">
+               <h2>Client Testimonial</h2>
+               <div class="testi-arrows">
+                  <button type="button" class="arr-btn arr-btn--prev" id="prevTesti" aria-label="Previous testimonials">
+                     <svg viewBox="0 0 24 24">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                     </svg>
+                  </button>
+                  <button type="button" class="arr-btn arr-btn--next" id="nextTesti" aria-label="Next testimonials">
+                     <svg viewBox="0 0 24 24">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                     </svg>
+                  </button>
+               </div>
+            </div>
+            <div class="testi-slider-wrap">
+               <div class="testi-slick">
+                  <div class="tcard fu">
+                     <div class="t-quote"><svg viewBox="0 0 24 24" aria-hidden="true">
+                           <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                        </svg></div>
+                     <p>Absolutely love Shopery! The produce is always fresh and delivery is super fast. I can truly taste
+                        the
+                        difference with certified organic vegetables. Highly recommended to everyone!</p>
+                     <div class="tcard-footer">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80"
+                           alt="Maria Lopez">
+                        <div class="tcard-footer-text">
+                           <div class="t-uname">Maria Lopez</div>
+                           <div class="t-urole">Regular Customer</div>
+                        </div>
+                        <div class="t-stars" title="5 out of 5 stars">
+                           <svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tcard fu d1">
+                  <div class="t-quote"><svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                     </svg></div>
+                  <p>Switched to Shopery 6 months ago and never looked back. The weekly subscription box is perfect for
+                     my
+                     family. Excellent quality and freshness every single time without fail.</p>
+                  <div class="tcard-footer">
+                     <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80"
+                        alt="Robert Fox">
+                     <div class="tcard-footer-text">
+                        <div class="t-uname">Robert Fox</div>
+                        <div class="t-urole">Customer</div>
+                     </div>
+                     <div class="t-stars" title="5 out of 5 stars">
+                        <svg viewBox="0 0 24 24">
+                           <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg><svg viewBox="0 0 24 24">
+                           <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg><svg viewBox="0 0 24 24">
+                           <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg><svg viewBox="0 0 24 24">
+                           <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg><svg viewBox="0 0 24 24">
+                           <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="tcard fu d2">
+                  <div class="t-quote"><svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                     </svg></div>
+                  <p>Switched to Shopery 6 months ago and never looked back. The weekly subscription box is perfect for
+                  my
+                  family. Excellent quality and freshness every single time without fail.</p>
+                  <div class="tcard-footer">
+                     <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="Anna Kim">
+                     <div class="tcard-footer-text">
+                        <div class="t-uname">Anna Kim</div>
+                        <div class="t-urole">Health Coach</div>
+                     </div>
+                     <div class="t-stars" title="5 out of 5 stars">
+                        <svg viewBox="0 0 24 24">
+                           <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg><svg viewBox="0 0 24 24">
+                           <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg><svg viewBox="0 0 24 24">
+                           <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg><svg viewBox="0 0 24 24">
+                           <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg><svg viewBox="0 0 24 24">
+                           <path
+                              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+                  <div class="tcard fu">
+                     <div class="t-quote"><svg viewBox="0 0 24 24" aria-hidden="true">
+                           <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                        </svg></div>
+                     <p>Fresh produce every week and fair prices. The app is easy to use and delivery always arrives in
+                        the promised window.</p>
+                     <div class="tcard-footer">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&q=80"
+                           alt="James Park">
+                        <div class="tcard-footer-text">
+                           <div class="t-uname">James Park</div>
+                           <div class="t-urole">Subscriber</div>
+                        </div>
+                        <div class="t-stars" title="5 out of 5 stars">
+                           <svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tcard fu">
+                     <div class="t-quote"><svg viewBox="0 0 24 24" aria-hidden="true">
+                           <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                        </svg></div>
+                     <p>Organic meat and dairy taste amazing here. Support resolved my delivery question in minutes.
+                        Highly satisfied.</p>
+                     <div class="tcard-footer">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80"
+                           alt="Lisa Wong">
+                        <div class="tcard-footer-text">
+                           <div class="t-uname">Lisa Wong</div>
+                           <div class="t-urole">Food blogger</div>
+                        </div>
+                        <div class="t-stars" title="5 out of 5 stars">
+                           <svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tcard fu">
+                     <div class="t-quote"><svg viewBox="0 0 24 24" aria-hidden="true">
+                           <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                        </svg></div>
+                     <p>We order for our office weekly — reliable quality, minimal plastic, and invoices are always
+                        correct.</p>
+                     <div class="tcard-footer">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+                           alt="David Cole">
+                        <div class="tcard-footer-text">
+                           <div class="t-uname">David Cole</div>
+                           <div class="t-urole">Office manager</div>
+                        </div>
+                        <div class="t-stars" title="5 out of 5 stars">
+                           <svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg><svg viewBox="0 0 24 24">
+                              <path
+                                 d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="testiSlickDots" class="testi-slick-dots"></div>
+            </div>
+         </section>
+      </div>
+
+      <!-- NEWSLETTER -->
+      <section id="newsLetter">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-4 leftSide">
+                  <h2>Subcribe our Newsletter</h2>
+                  <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu
+                     magna.</p>
+               </div>
+               <div class="col-lg-5 middleSide">
+                  <form action="">
+                     <div class="d-flex inputBox">
+                        <input type="email" placeholder="Your email address">
+                        <button>Subscribe</button>
+                     </div>
+                  </form>
+               </div>
+               <div class="col-lg-3 right-side text-center text-lg-end">
+                  <a href="#" class="active">
+                     <iconify-icon icon="fontisto:facebook" width="25" height="20"></iconify-icon>
+                  </a>
+                  <a href="#">
+                     <iconify-icon icon="ri:twitter-fill" width="25" height="20"></iconify-icon>
+                  </a>
+                  <a href="#">
+                     <iconify-icon icon="nrk:some-pinterest" width="25" height="20"></iconify-icon>
+                  </a>
+                  <a href="#">
+                     <iconify-icon icon="iconoir:instagram" width="25" height="20"></iconify-icon>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- *Newsletter End Hear -->
+   </main>
+   
+
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+   <script>
+      jQuery(function ($) {
+         const $team = $('.team-slick.responsive');
+         if ($team.length) {
+            $team.slick({
+               appendDots: $('#teamSlickDots'),
+               infinite: false,
+               speed: 300,
+               slidesToShow: 4,
+               slidesToScroll: 4,
+               prevArrow: false,
+               nextArrow: false,
+               responsive: [
+                  {
+                     breakpoint: 1024,
+                     settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                     }
+                  },
+                  {
+                     breakpoint: 600,
+                     settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                     }
+                  },
+                  {
+                     breakpoint: 480,
+                     settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                     }
+                  }
+               ]
+            });
+            $('#teamPrev').on('click', function () {
+               $team.slick('slickPrev');
+            });
+            $('#teamNext').on('click', function () {
+               $team.slick('slickNext');
+            });
+         }
+
+         const $testi = $('.testi-slick');
+         if ($testi.length) {
+            $testi.slick({
+               dots: true,
+               appendDots: $('#testiSlickDots'),
+               infinite: false,
+               speed: 300,
+               slidesToShow: 3,
+               slidesToScroll: 3,
+               prevArrow: false,
+               nextArrow: false,
+               responsive: [
+                  {
+                     breakpoint: 1024,
+                     settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                     }
+                  },
+                  {
+                     breakpoint: 600,
+                     settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                     }
+                  },
+                  {
+                     breakpoint: 480,
+                     settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                     }
+                  }
+               ]
+            });
+            $('#prevTesti').on('click', function () {
+               $testi.slick('slickPrev');
+            });
+            $('#nextTesti').on('click', function () {
+               $testi.slick('slickNext');
+            });
+
+            requestAnimationFrame(function () {
+               $testi.slick('setPosition');
+            });
+            $(window).on('resize.testiSlick', function () {
+               if ($testi.hasClass('slick-initialized')) {
+                  $testi.slick('setPosition');
+               }
+            });
+         }
+      });
+
+      // Fade-up scroll animation (already fu elements have animation, but ensure they reset properly)
+      const fadeElements = document.querySelectorAll('.fu');
+      const fadeObserver = new IntersectionObserver((entries) => {
+         entries.forEach(entry => {
+            if (entry.isIntersecting) {
+               entry.target.style.animationPlayState = 'running';
+               fadeObserver.unobserve(entry.target);
+            }
+         });
+      }, { threshold: 0.1 });
+      fadeElements.forEach(el => {
+         el.style.animationPlayState = 'paused';
+         fadeObserver.observe(el);
+      });
+
+   </script>
+</body>
+
+</html>

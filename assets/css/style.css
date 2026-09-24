@@ -1741,6 +1741,7 @@ input::-webkit-inner-spin-button {
   top: 0px;
   pointer-events: none;
   cursor: pointer;
+  appearance: none;
   -webkit-appearance: none;
   z-index: 5;
 }
